@@ -1,3 +1,8 @@
+/*
+PRIMITIVES are copied by their VALUE
+OBJECTS are copied by their REFERENCE
+ */
+
 /* Values */
 let x = 10;
 let y = x;

@@ -1,4 +1,10 @@
 {
+  "name": "learning-javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/neovrnaz/learning-javascript.git",
+  "author": "neovrnaz <neovrnaz@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "node-fetch": "^2.6.1"
   }

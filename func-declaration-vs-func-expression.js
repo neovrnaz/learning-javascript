@@ -12,11 +12,11 @@ function declaration() {
   console.log("I come from a function declaration")
 }
 
+// Function expressions are not hoisted
+console.log(expression())
+expression();
 
 let expression = function() {
   console.log("I come from a function expression")
 };
 
-// Function expressions are not hoisted
-console.log(expression())
-expression();

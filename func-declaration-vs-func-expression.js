@@ -5,6 +5,8 @@
   * 2. Function Expression
  */
 
+const multiply = 2 * 4;
+
 console.log(declaration())
 declaration();
 

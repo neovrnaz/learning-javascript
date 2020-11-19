@@ -20,13 +20,13 @@
 true;
 a===20 && b===30;
 
-//* Primary Expressions -
+//* Primary Expressions
 'hello world'; // A string literal
 1.23; // A numeric literal
 true;
 this;
 
-//* Left-hand-side Expressions:
+//* Left-hand-side Expressions
 i = 10;
 total = 0;
 var obj = {};
@@ -36,6 +36,8 @@ array[1] = 'hello';
 
 //* Assignment Expressions
 average = 55;
+// Variable declaration
+const a = 5;
 
 //* Expressions with side effects
 sum = 20;
@@ -45,13 +47,13 @@ sum++;
 // Expressions resolve to a value
 
 //             Is an expression because it returns something
-//             /
+//             |
 const y = getAnswer();
 const x1 = 2 + 5;
 const x2 = 5;
-//        /
-//       5 is already a value but to the language interpreter it resolves
-//       to the value '5'.
+//         |
+//        5 is already a value but to the language interpreter it resolves
+//        to the value '5'.
 
 
 /*======== Statements ======== */
@@ -66,6 +68,7 @@ const x2 = 5;
 */
 
 //* Declaration Statements
+// Creates a variable or function
 var sum;
 var average;
 
@@ -75,16 +78,28 @@ var average;
 //         \      /
 //        Expression
 
-//* Function declaration statement
+// Function declaration statement
 function greet() {...}
 
 //* Expression Statements
+var a = (b = 1);
+//       \   /
+//     Assignment Expression
 
 //* Conditional Statement
+if (expression) {
+      statement 1
+} else {
+      statement 2
+}
 
 // Loops and Jumps
-// Looping statements: for, do/while, for
-// Jump statements: break, continue, return and throw
+do...while
+for () {}
+break
+continue
+return
+throw
 
 //* Misc Statement Examples:
 // A statement is an instruction

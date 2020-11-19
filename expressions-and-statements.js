@@ -6,27 +6,27 @@
  * value that's been assigned to it.
  */
 
-// Arithmetic Expressions
+//* Arithmetic Expressions
 10;
 10 + 13;
 
-// String Expressions
+//* String Expressions
 'hello';
 'hello' + 'world';
 
-// Logical Expressions
+//* Logical Expressions
 10 > 9;
 10 < 20;
 true;
 a===20 && b===30;
 
-// Primary Expressions -
+//* Primary Expressions -
 'hello world'; // A string literal
 1.23; // A numeric literal
 true;
 this;
 
-// Left-hand-side Expressions:
+//* Left-hand-side Expressions:
 i = 10;
 total = 0;
 var obj = {};
@@ -34,10 +34,25 @@ obj.x = 20;
 array[0] = 20;
 array[1] = 'hello';
 
-// Assignment Expressions
+//* Assignment Expressions
+average = 55;
 
+//* Expressions with side effects
+sum = 20;
+sum++;
 
-// Expressions with side effects
+//* Misc Expression Examples:
+// Expressions resolve to a value
+
+//             Is an expression because it returns something
+//             /
+const y = getAnswer();
+const x1 = 2 + 5;
+const x2 = 5;
+//        /
+//       5 is already a value but to the language interpreter it resolves
+//       to the value '5'.
+
 
 /*======== Statements ======== */
 /*
@@ -50,12 +65,39 @@ array[1] = 'hello';
 * Javascript programs are a sequence of statements
 */
 
-// Declaration Statements
+//* Declaration Statements
+var sum;
+var average;
 
-// Expression Statements
+//     Statement
+//     /      \
+      var total = 0;
+//         \      /
+//        Expression
 
-// Conditional Statement
+//* Function declaration statement
+function greet() {...}
+
+//* Expression Statements
+
+//* Conditional Statement
 
 // Loops and Jumps
 // Looping statements: for, do/while, for
 // Jump statements: break, continue, return and throw
+
+//* Misc Statement Examples:
+// A statement is an instruction
+
+//    These are statements because they control actions but don't become values
+//     /
+      if () {...}
+      while() {...}
+      for () {...}
+
+
+/*======== Notes ======== */
+// You cannot put statements where expressions expect a value
+//e.g.
+console.log(const x); // error
+let b = if () {...}; // error

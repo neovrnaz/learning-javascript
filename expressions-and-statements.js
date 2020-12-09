@@ -36,8 +36,6 @@ array[1] = 'hello';
 
 //* Assignment Expressions
 average = 55;
-// Variable declaration
-const a = 5;
 
 //* Expressions with side effects
 sum = 20;

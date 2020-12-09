@@ -1,5 +1,5 @@
 # Learning Javascript
-> A simple repo to keep track things I've learned in JavaScript
+> A simple repo to keep track of what I've learned in JavaScript
 
 Javascript has dynamic typing, first class functions and prototype based object-orientation. 
 ### Features:

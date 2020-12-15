@@ -44,14 +44,12 @@ sum++;
 //* Misc Expression Examples:
 // Expressions resolve to a value
 
-//             Is an expression because it returns something
-//             |
-const y = getAnswer();
-const x1 = 2 + 5;
-const x2 = 5;
-//         |
-//        5 is already a value but to the language interpreter it resolves
-//        to the value '5'.
+//  Is an expression because it returns something
+//   |
+getAnswer();
+
+2 + 5;
+5;
 
 
 /*======== Statements ======== */

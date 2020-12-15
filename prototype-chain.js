@@ -32,4 +32,7 @@ protoObj.__proto__.otherMethod = function () {
 //
 // console.log(childObj.prop1);
 
-let childObj2 = Object.create(protoObj)
+let childObj2 = Object.create(protoObj);
+console.log(childObj2.prop1);
+childObj2.prop1 = 777;
+console.log(childObj2.prop1);

@@ -4,4 +4,4 @@ function greet(msg) {
   };
 }
 let english = greet('Hello');
-english('Georeg');
+english('George');

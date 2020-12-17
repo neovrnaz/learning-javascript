@@ -1,7 +1,7 @@
-function alertThenReturn() {
-  alert('Message 1!');
-
+const returnAFunction = function () {
   return function () {
-    alert('Message 2!');
+    console.log('Hello from inside a function');
   };
-}
+};
+
+returnAFunction()();

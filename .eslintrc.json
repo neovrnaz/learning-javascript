@@ -12,6 +12,7 @@
     },
     "rules": {
         "prettier/prettier": ["warn", { "singleQuote": true }],
-        "quotes": [2, "single", "avoid-escape"]
+        "quotes": [2, "single", "avoid-escape"],
+        "no-debugger": "off"
     }
 }

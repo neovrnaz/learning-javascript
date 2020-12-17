@@ -5,6 +5,13 @@
   "repository": "https://github.com/neovrnaz/learning-javascript.git",
   "author": "neovrnaz <neovrnaz@gmail.com>",
   "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "^2.2.1"
+  },
   "dependencies": {
     "node-fetch": "^2.6.1"
   }

@@ -1,9 +1,13 @@
-class User {
-  constructor(email, name) {
-    this.email = email;
-    this.name = name;
+function Person(name, age, eyeColor) {
+  this.name = name;
+  this.age = age;
+  this.eyecolor = eyeColor;
+  this.updateAge = function () {
+    return ++this.age;
   }
 }
 
-var userOne = new User('john@gmail.com', 'john');
-console.dir(userOne);
+let person1 = new Person('Brian Cumin', 32, 'Brown');
+
+person1.updateAge();
+console.log(person1);

@@ -9,11 +9,15 @@ const objects = [
   },
 ];
 
-for (let i = 0; i < objects.length; i++) {
-  const currentObject = objects[i];
-  for (let property in currentObject) {
-    if (currentObject.hasOwnProperty.call(currentObject, property)) {
-      console.log(currentObject[property]);
+function printObjectsValues() {
+  let valuesArray = [];
+  for (let i = 0; i < objects.length; i++) {
+    const currentObject = objects[i];
+    for (let property in currentObject) {
+      if (currentObject.hasOwnProperty.call(currentObject, property)) {
+        valuesArray.push(currentObject[property]);
+      }
     }
   }
+  return valuesArray;
 }

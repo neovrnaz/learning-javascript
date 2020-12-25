@@ -8,4 +8,3 @@ function objectHasOwnPropCheck(obj, value) {
 }
 
 console.log(objectHasOwnPropCheck(object1, 'string'));
-
